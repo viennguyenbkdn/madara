@@ -2,6 +2,7 @@
 
 ## Next release
 
+- chore: added features flag for DA-layer (Avail, Celestia)
 - chore: added ca-certificate in DockerFile for SSL related issues
 - chore(primitives/commitment): remove crate
 - chore(primitives/block/header): remove starknet-trie dependent fields

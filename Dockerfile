@@ -9,7 +9,7 @@ RUN apt-get -y update; \
 
 WORKDIR /madara
 COPY . .
-RUN cargo build --release
+RUN cargo build --release --feature avail --feature celestia
 
 FROM debian:buster-slim
 LABEL description="Madara, a blazing fast Starknet sequencer" \
