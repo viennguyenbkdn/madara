@@ -10,8 +10,8 @@ use cairo_lang_starknet::contract_class::{
 };
 use cairo_lang_starknet::contract_class_into_casm_contract_class::StarknetSierraCompilationError;
 use cairo_lang_utils::bigint::BigUintAsHex;
-use frame_support::{Deserialize, Serialize};
 use indexmap::IndexMap;
+use frame_support::{Deserialize, Serialize};
 use mp_block::Block as StarknetBlock;
 use mp_digest_log::find_starknet_block;
 use mp_felt::Felt252Wrapper;
