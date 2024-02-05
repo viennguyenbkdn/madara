@@ -2,6 +2,22 @@
 
 ## Next release
 
+- refacto: remove abusive `TryInto` impl
+- dev: optimize tx trace creation
+- dev: make Madara std compatible
+- CI: fix taplo version
+- chore: add cache usage for `getEvents` and `getTransactionReceipt`
+- fix: cairo1 contracts should be identified by their sierra class hash
+- fix(cli): repair broken cli for da conf
+- feat(client): on `add_declare_transaction` store sierra contract classes in
+  the madara backend
+- chore: use struct error in client/db
+- fix: don't ignore Sierra to CASM mapping in genesis config
+- refacto: early exit txs fee estimation when one fails
+- dev: fix linter warning in README.md
+- fix: remove waiting loop from `getTxReceipt`
+- feat: types in `mp-transactions` impl a method to get their version
+- feat: make L1 gas price a `const` of the `RuntimeConfig`
 - fix: broken class hashes and contracts in genesis
 - refactor: rename LAST_SYNCED_L1_BLOCK to be more clear
 - chore: add headers to da calldata, fix eth da in sovereign mode
@@ -53,6 +69,9 @@
 - dev: add avail and celestia crates behind a feature flag
 - dev: replace md5 with sha3_256 hash function
 - feat: fixing getNonce Rpc Call and adding a new test
+- refactor: use Zaun crate for Starknet core contract bindings
+- refactor: use Anvil sandbox from Zaun crate
+- feat(rpc) : estimateMessageFee RPC call implementation
 
 ## v0.6.0
 
@@ -90,6 +109,7 @@
 - chore(data-availability-avail): implement fire and forget, and add ws
   reconnection logic
 - chore: update `polkadot-sdk` to `release-polkadot-v1.3.0`
+- feat: fallback default file for DA and Settlement configuration files
 
 ## v0.5.0
 
@@ -255,3 +275,6 @@
 - feat: add a `genesis_loader` for the node and mocking
 - feat: add `madara_tsukuyomi` as a submodule
 - branding: use new logo in the README
+- dev: Get the block status from the actual block in get_block_with_tx_hashes
+- fix: l1-l2 messaging
+- dev : clean contracts and compiled files
